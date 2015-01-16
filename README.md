@@ -1,3 +1,4 @@
 # Knas
 
-Countdown app using localStorage. Built with React.
+Countdown app built with React and localStorage.
+![Knas](img.png)
