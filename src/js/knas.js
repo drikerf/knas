@@ -191,7 +191,7 @@ var Alert = React.createClass({
   render: function() {
     return (
       <div className="alert">
-        <strong>Awesome!</strong> Your countdown is added!
+        <strong>Awesome!</strong> Your countdown was added!
       </div>
     );
   }

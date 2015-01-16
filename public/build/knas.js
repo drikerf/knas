@@ -191,7 +191,7 @@ var Alert = React.createClass({displayName: 'Alert',
   render: function() {
     return (
       React.createElement("div", {className: "alert"}, 
-        React.createElement("strong", null, "Awesome!"), " Your countdown is added!"
+        React.createElement("strong", null, "Awesome!"), " Your countdown was added!"
       )
     );
   }
