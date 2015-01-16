@@ -1,0 +1,16 @@
+{
+  "name": "knas",
+  "version": "1.0.0",
+  "description": "A countdown app built with React using localstorage.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jsx": "jsx --watch src/js/ public/build/",
+    "less": "lessc -x src/less/knas.less > public/css/knas.css"
+  },
+  "author": "Fredrik Hallsmar",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.10.6"
+  }
+}

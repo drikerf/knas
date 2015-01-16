@@ -1,0 +1,91 @@
+// Import bootstrap.
+@import 'bootstrap/bootstrap.less';
+/* 
+  PROPERTIES.
+*/
+@base: #fff;
+@bgImage: '../img/bg.jpg';
+@baseFont: 'Inconsolata', sans-serif;
+@headerColor: #fff;
+@headerSize: 48px;
+@navButtonSize: 28px;
+@navButtonWeight: 800;
+@countdownHeight: 68px;
+@countdownMarginBottom: 20px;
+@countdownCountSize: 48px;
+@countdownTextSize: 10px;
+
+/* 
+  LAYOUT.
+*/
+body {
+  font-family: @baseFont;
+  color: @base;
+  background-image: url(@bgImage);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: @headerColor;
+  font-size: @headerSize;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.countdown {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-bottom: @countdownMarginBottom;
+  height: @countdownHeight;
+  text-align: left;
+}
+
+.today {
+  background-color: rgba(19, 205, 74, 0.7);
+}
+
+.navButton {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  font-size: @navButtonSize;
+  font-weight: @navButtonWeight;
+  cursor: pointer;
+}
+
+.daysLeftCount {
+  font-size: @countdownCountSize;
+  padding-right: 5px;
+}
+
+.daysLeftText {
+  font-size: @countdownTextSize;
+}
+
+.deleteButton {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  cursor: pointer;
+}
+
+// Form layout on large screens.
+@media (min-width: @screen-sm-min) {
+  .container {
+    width: 50%;
+  }
+}
+
+// No more rounded corners.
+* {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+   border-radius: 0 !important;
+}
