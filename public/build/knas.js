@@ -101,8 +101,9 @@ var AddForm = React.createClass({displayName: 'AddForm',
     this.props.onSubmit(title, dateMs) 
   },
   dateStringToMs: function(string) {
-    var monthMap = {'January':0, 'February':1};
-    var dateRegex = /(\d{1,2})\s(January|February),\s(\d{4})/g;
+    var monthMap = {'January':0, 'February':1, 'March':2, 'April':3, 'May':4, 'June':5, 'July':6, 
+                    'August':7, 'September':8, 'October':9, 'November':10, 'December': 11};
+    var dateRegex = /(\d{1,2})\s(January|February|March|April|May|June|July|August|September|October|November|December),\s(\d{4})/g;
     var match = dateRegex.exec(string);
     var date = new Date(match[3], monthMap[match[2]], match[1]);
     return date.getTime();
